@@ -1,0 +1,22 @@
+name: OpenCart
+author: Umbler
+logo_url: https://design.umbler.com//assets/svg/sprite-logos.svg#opencart
+version: 3.0.3.2
+description: "The OpenCart marketplace features 13000+ modules and themes to jump-start, grow and expand your business. You can find beautiful themes for just about any sector, service integrations, payment providers, shipping methods, social media, marketing, accounting, reporting, sales as well as language packs."
+short_description: "The best FREE and open-source eCommerce platform"
+stack: php
+pack: "upload/**/*.*"
+dest: /public
+
+env:
+  DB_NAME: "{database_mysql_name}" 
+  DB_USER: "{database_mysql_user}"
+  DB_PASSWORD: "{database_mysql_password}"
+  DB_HOST: "{database_mysql_host}"
+  
+requires:
+  web: 
+    quantity: 1
+    size: 1
+  database:
+    - type: mysql
