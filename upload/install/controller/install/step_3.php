@@ -208,25 +208,25 @@ class ControllerInstallStep3 extends Controller {
 		if (isset($this->request->post['db_hostname'])) {
 			$data['db_hostname'] = $this->request->post['db_hostname'];
 		} else {
-			$data['db_hostname'] = 'localhost';
+			$data['db_hostname'] = getenv('DB_HOST');
 		}
 
 		if (isset($this->request->post['db_username'])) {
 			$data['db_username'] = $this->request->post['db_username'];
 		} else {
-			$data['db_username'] = 'root';
+			$data['db_username'] = getenv('DB_USER');
 		}
 
 		if (isset($this->request->post['db_password'])) {
 			$data['db_password'] = $this->request->post['db_password'];
 		} else {
-			$data['db_password'] = '';
+			$data['db_password'] = getenv('DB_PASSWORD');
 		}
 
 		if (isset($this->request->post['db_database'])) {
 			$data['db_database'] = $this->request->post['db_database'];
 		} else {
-			$data['db_database'] = '';
+			$data['db_database'] = getenv('DB_NAME');
 		}
 		
 		if (isset($this->request->post['db_port'])) {
@@ -238,7 +238,7 @@ class ControllerInstallStep3 extends Controller {
 		if (isset($this->request->post['db_prefix'])) {
 			$data['db_prefix'] = $this->request->post['db_prefix'];
 		} else {
-			$data['db_prefix'] = 'oc_';
+			$data['db_prefix'] = 'uboc_';
 		}
 
 		if (isset($this->request->post['username'])) {
