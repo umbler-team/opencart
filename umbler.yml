@@ -5,7 +5,7 @@ version: 3.0.3.2
 description: "The OpenCart marketplace features 13000+ modules and themes to jump-start, grow and expand your business. You can find beautiful themes for just about any sector, service integrations, payment providers, shipping methods, social media, marketing, accounting, reporting, sales as well as language packs."
 short_description: "The best FREE and open-source eCommerce platform"
 stack: php
-pack: "upload/*"
+pack: "upload"
 dest: /public
 
 env:
