@@ -59,9 +59,9 @@ If a bug is found in an announced developer release that is significant (such as
 
 To receive developer notifications about release information, sign up to the newsletter on the [OpenCart website](https://www.opencart.com) - located in the footer. Then choose the developer news option.
 
-## How to install
+## Install
 
-Please read the installation instructions included in the repository or download file.
+[![Deploy](https://assets.umbler.com/brand/umbler-deploy-btn.svg)](https://app.umbler.com/deploy)
 
 ## License
 
